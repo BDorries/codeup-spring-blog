@@ -18,7 +18,7 @@ public class PostController {
         return "view an individual page";
     }
 
-    @GetMapping("/posts/create")
+    @RequestMapping(path = "/posts/create", method = RequestMethod.GET)
     @ResponseBody
     public String create(){
         return "view the form for creating a post";
