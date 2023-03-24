@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h1>Let's roll the dice</h1>
+
+        <ul>
+            <li><a href="/roll-dice/1">1</a></li>
+            <li><a href="/roll-dice/2">2</a></li>
+            <li><a href="/roll-dice/3">3</a></li>
+            <li><a href="/roll-dice/4">4</a></li>
+            <li><a href="/roll-dice/5">5</a></li>
+            <li><a href="/roll-dice/6">6</a></li>
+        </ul>
+
+        <div th:if="${val}">
+            <p>Your guess was <span th:text="${val}"></span></p>
+            <p>The correct number was <span th:text="${targetVal}"></span></p>
+            <p>You
+                <span th:text="${val == targetVal} ? 'Win!' : 'Lose!'"></span>
+            </p>
+
+        </div>
+    </body>
+</html>

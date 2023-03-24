@@ -20,7 +20,7 @@ public class HelloController {
         return "Hello, "+name;
     }
 
-    @GetMapping("/dice")
+    @GetMapping("/dice-old")
     @ResponseBody
     public String rollDice(){
         int diceRoll = (int) (Math.random()*6)+1;
