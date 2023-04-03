@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head th:fragment="head">
+    <meta charset="UTF-8" />
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="/css/postStyles.css">
+  </head>
+  <body>
+    <nav th:fragment="navbar">
+      <ul>
+        <li><a href="posts/create">Create an ad</a></li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </nav>
+  </body>
+</html>
